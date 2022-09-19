@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProductCatalogApplication<product-catalog>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cassianodess.productcatalog.ProductCatalogApplication",
+            "projectName": "product-catalog",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ShoppingCartApplication<shopping-cart>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.cassianodess.shoppingcart.ShoppingCartApplication",
+            "projectName": "shopping-cart",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
