@@ -1,5 +1,7 @@
 package com.cassianodess.shoppingcart.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,10 @@ public class CartService {
     
     @Autowired
     private CartRepository repository;
+
+    public List<Cart> list() {
+        return this.repository.findAll();
+    }
 
 
     public Cart getCartById(Long cartId) {

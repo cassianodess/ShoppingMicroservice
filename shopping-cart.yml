@@ -1,0 +1,25 @@
+server:
+  port:
+    8082
+    
+spring:
+  h2:
+    console:
+      path: /h2
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+
+eureka:
+  instance: 
+    hostname: localhost
+    port: 9000
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+    server:
+      wait-time-in-ms-when-sync-empty: 3000    
